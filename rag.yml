@@ -1,12 +1,12 @@
-version: '3.8'
+version: '3.8' 
 
 services:
   vectordb:
     image: ankane/pgvector:latest
     environment:
-      POSTGRES_DB: mydatabase
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: librechat
+      POSTGRES_USER: f7fee9a8671e
+      POSTGRES_PASSWORD: CunbffzJdcHxykn8DYNihQ==
     volumes:
       - pgdata2:/var/lib/postgresql/data
     ports:
@@ -17,15 +17,22 @@ services:
     environment:
       - DB_HOST=vectordb
       - DB_PORT=5432
-      - POSTGRES_DB=mydatabase
-      - POSTGRES_USER=myuser
-      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_DB=ragvectordb
+      - POSTGRES_USER=d1ec53790a60
+      - POSTGRES_PASSWORD=boPe2tSXWLC3WUxw6swFYg==
+      - JWT_SECRET=1353b016b55ebcaece99e164e7c0889bfdbe1b6a0719ee9312ea8758023efacb
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - EMBEDDINGS_PROVIDER=openai
+      - VECTOR_STORE=meilisearch
+      - MEILISEARCH_HOST=http://localhost:7700
+      - MEILISEARCH_API_KEY=fjNnu7GNA9I6rXzLeF4ot5X4wnBB8ieXfGfTDeqP5Jo
+      - CHUNK_SIZE=1500
+      - CHUNK_OVERLAP=200
+      - MAX_DOCUMENTS=10
     ports:
-      - "${RAG_PORT}:${RAG_PORT}"
+      - "8000:8000"
     depends_on:
       - vectordb
-    env_file:
-      - .env
 
 volumes:
   pgdata2:

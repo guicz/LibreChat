@@ -1,0 +1,126 @@
+{
+  "name": "Assistente Jurídico - Barros & Tirloni Advogados",
+  "short_name": "BT Jurídico",
+  "description": "Assistente jurídico virtual especializado em execuções e processos judiciais. Desenvolvido exclusivamente para o escritório Barros & Tirloni Advogados, oferecendo suporte em análise processual, documentação e estratégias jurídicas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#003428",
+  "theme_color": "#003428",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/apple-touch-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/maskable-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["legal", "productivity", "business", "professional"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "scope": "/",
+  "theme_colors": {
+    "primary": "#003428",
+    "secondary": "#a68530"
+  },
+  "shortcuts": [
+    {
+      "name": "Novo Processo",
+      "url": "/novo-processo",
+      "description": "Iniciar análise de um novo processo",
+      "icons": [
+        {
+          "src": "/assets/favicon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Análise Documental",
+      "url": "/analise-documental",
+      "description": "Iniciar análise de documentos",
+      "icons": [
+        {
+          "src": "/assets/favicon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/og.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Assistente Jurídico Barros & Tirloni"
+    }
+  ],
+  "related_applications": [],
+  "iarc_rating_id": "",
+  "share_target": {
+    "action": "/compartilhar",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "documents",
+          "accept": [
+            "application/pdf",
+            ".pdf",
+            "image/*"
+          ]
+        }
+      ]
+    }
+  }
+} 
