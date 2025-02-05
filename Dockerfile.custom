@@ -1,0 +1,10 @@
+FROM ghcr.io/danny-avila/librechat-dev:latest
+
+USER root
+
+# Criar diretórios necessários e ajustar permissões
+RUN mkdir -p /.npm /.npm/_logs /app/node_modules && \
+    chown -R 1011:1011 /.npm /.npm/_logs /app/node_modules
+
+# Voltar para o usuário não-root
+USER 1011:1011 

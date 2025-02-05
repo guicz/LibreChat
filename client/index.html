@@ -1,17 +1,79 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <meta name="theme-color" content="#171717" />
+    <meta name="theme-color" content="#003428" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <title>LibreChat</title>
-    <link rel="shortcut icon" href="#" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Assistente Jurídico - Barros & Tirloni Advogados</title>
+    <meta name="description" content="Assistente jurídico virtual especializado em execuções e processos judiciais. Desenvolvido exclusivamente para o escritório Barros & Tirloni Advogados, oferecendo suporte em análise processual, documentação e estratégias jurídicas." />
+    <meta name="keywords" content="assistente jurídico, advocacia, direito, execução judicial, Barros & Tirloni, advogados, processos judiciais, análise jurídica, documentação legal" />
+    <meta name="author" content="Barros & Tirloni Advogados" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://doj.dg5.com.br/" />
+    <meta property="og:title" content="Assistente Jurídico - Barros & Tirloni Advogados" />
+    <meta property="og:description" content="Assistente jurídico virtual especializado em execuções e processos judiciais. Desenvolvido exclusivamente para o escritório Barros & Tirloni Advogados." />
+    <meta property="og:image" content="/assets/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Assistente Jurídico Barros & Tirloni - Interface do sistema" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://doj.dg5.com.br/" />
+    <meta property="twitter:title" content="Assistente Jurídico - Barros & Tirloni Advogados" />
+    <meta property="twitter:description" content="Assistente jurídico virtual especializado em execuções e processos judiciais. Desenvolvido exclusivamente para o escritório Barros & Tirloni Advogados." />
+    <meta property="twitter:image" content="/assets/og.png" />
+    <meta property="twitter:image:alt" content="Assistente Jurídico Barros & Tirloni - Interface do sistema" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon-180x180.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="mask-icon" href="/assets/logo.svg" color="#003428" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://doj.dg5.com.br" />
+    <link rel="preconnect" href="https://barrostirloni.com.br" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://doj.dg5.com.br/" />
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Assistente Jurídico - Barros & Tirloni",
+      "applicationCategory": "LegalSoftware",
+      "description": "Assistente jurídico virtual especializado em execuções e processos judiciais, desenvolvido exclusivamente para o escritório Barros & Tirloni Advogados.",
+      "provider": {
+        "@type": "LegalService",
+        "name": "Barros & Tirloni Advogados",
+        "url": "https://barrostirloni.com.br"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/OnlineOnly"
+      }
+    }
+    </script>
+    
     <style>
       html,
       body {
@@ -26,12 +88,12 @@
       let backgroundColor;
 
       if (theme === 'dark') {
-        backgroundColor = '#0d0d0d';
+        backgroundColor = '#003428';
       } else if (theme === 'light') {
         backgroundColor = '#ffffff';
       } else if (theme === 'system') {
         const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        backgroundColor = prefersDarkScheme ? '#0d0d0d' : '#ffffff';
+        backgroundColor = prefersDarkScheme ? '#003428' : '#ffffff';
       } else {
         backgroundColor = '#ffffff';
       }
